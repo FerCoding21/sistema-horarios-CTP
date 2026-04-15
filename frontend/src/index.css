@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    @apply bg-gray-50 text-gray-800 font-sans;
+    font-size: 15px;
+  }
+
+  h1, h2, h3 {
+    @apply font-display text-verde-700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-verde-500 hover:bg-verde-600 text-white font-medium
+           px-4 py-2 rounded-lg transition-all duration-200
+           active:scale-95 shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-verde-600 font-medium
+           px-4 py-2 rounded-lg border border-verde-200
+           transition-all duration-200 active:scale-95;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white font-medium
+           px-4 py-2 rounded-lg transition-all duration-200 active:scale-95;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-card border border-gray-100 p-6;
+  }
+
+  .input {
+    @apply w-full border border-gray-200 rounded-lg px-3 py-2
+           focus:outline-none focus:ring-2 focus:ring-verde-400
+           focus:border-transparent transition-all duration-200
+           text-gray-800 bg-white;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-gray-600 mb-1;
+  }
+
+  .badge-verde {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full
+           text-xs font-medium bg-verde-100 text-verde-700;
+  }
+
+  .badge-amarillo {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full
+           text-xs font-medium bg-yellow-100 text-yellow-700;
+  }
+
+  .badge-rojo {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full
+           text-xs font-medium bg-red-100 text-red-600;
+  }
+
+  .table-header {
+    @apply bg-verde-600 text-white text-sm font-medium;
+  }
+
+  .table-row {
+    @apply border-b border-gray-100 hover:bg-verde-50
+           transition-colors duration-150;
+  }
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f4f6f4; }
+::-webkit-scrollbar-thumb { background: #2E7D32; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #1B5E20; }
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.fade-in   { animation: fadeIn  0.3s ease forwards; }
+.slide-in  { animation: slideIn 0.25s ease forwards; }

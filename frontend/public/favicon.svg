@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Sombra exterior -->
+  <rect x="5" y="9" width="54" height="50" rx="10" fill="#00000022"/>
+
+  <!-- Cuerpo principal del calendario -->
+  <rect x="4" y="7" width="54" height="50" rx="10" fill="url(#bodyGrad)"/>
+
+  <!-- Franja del encabezado -->
+  <rect x="4" y="7" width="54" height="20" rx="10" fill="url(#headerGrad)"/>
+  <rect x="4" y="19" width="54" height="8" fill="#166534"/>
+
+  <!-- Brillo sutil en la franja -->
+  <rect x="8" y="9" width="36" height="6" rx="3" fill="white" opacity="0.12"/>
+
+  <!-- Argollas del calendario -->
+  <rect x="19" y="3" width="7" height="11" rx="3.5" fill="#14532d"/>
+  <rect x="38" y="3" width="7" height="11" rx="3.5" fill="#14532d"/>
+  <rect x="20.5" y="2" width="4" height="9" rx="2" fill="#1a6340"/>
+  <rect x="39.5" y="2" width="4" height="9" rx="2" fill="#1a6340"/>
+
+  <!-- Texto en encabezado -->
+  <text x="32" y="21" font-family="system-ui,sans-serif" font-size="8.5"
+        font-weight="800" fill="white" text-anchor="middle" letter-spacing="0.5"
+        opacity="0.95">CTP</text>
+
+  <!-- Cuadrícula de días: 3 columnas × 2 filas -->
+  <!-- Fila superior -->
+  <rect x="10" y="32" width="12" height="10" rx="3" fill="white" opacity="0.85"/>
+  <rect x="26" y="32" width="12" height="10" rx="3" fill="white" opacity="0.85"/>
+  <rect x="42" y="32" width="12" height="10" rx="3" fill="#bbf7d0" opacity="0.95"/>
+
+  <!-- Fila inferior -->
+  <rect x="10" y="46" width="12" height="8" rx="3" fill="white" opacity="0.85"/>
+  <rect x="26" y="46" width="12" height="8" rx="3" fill="#bbf7d0" opacity="0.95"/>
+  <rect x="42" y="46" width="12" height="8" rx="3" fill="white" opacity="0.85"/>
+
+  <!-- Marcadores en celdas resaltadas -->
+  <circle cx="48" cy="37" r="3" fill="#16a34a"/>
+  <circle cx="32" cy="50" r="2.5" fill="#16a34a"/>
+
+  <!-- Pequeños puntos en celdas normales -->
+  <circle cx="16" cy="37" r="1.5" fill="#4ade80" opacity="0.6"/>
+  <circle cx="16" cy="50" r="1.5" fill="#4ade80" opacity="0.6"/>
+  <circle cx="32" cy="37" r="1.5" fill="#4ade80" opacity="0.6"/>
+  <circle cx="48" cy="50" r="1.5" fill="#4ade80" opacity="0.6"/>
+
+  <defs>
+    <linearGradient id="bodyGrad" x1="4" y1="7" x2="58" y2="57" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="4" y1="7" x2="58" y2="27" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+  </defs>
+</svg>
