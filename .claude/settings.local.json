@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Read(//c/Users/Fer/Downloads/**)",
-      "Bash(python)",
-      "Bash(python -c \"import app.models; from app.main import app; print\\('Backend OK'\\)\")"
-    ]
-  }
-}
